@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import LoginForm from './componant/LoginForm'
+import Navbar from './componants/Navbar'
 
 function App() {
   return (
     <div>
-      <LoginForm/>
+      <Navbar/>
     </div>
   )
 }
