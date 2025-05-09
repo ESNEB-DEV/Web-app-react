@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Features() {
     return (
-            <div className="stats shadow flex  justify-center">
+            <div className="stats shadow flex justify-center p-4">
 
                 <div className="stat">
                     <div className="stat-figure text-primary">
@@ -26,7 +26,7 @@ export default function Features() {
                     <div className="stat-figure text-secondary">
                         <div className="avatar online">
                             <div className="w-16 rounded-full">
-                                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                <img src="https://images.unsplash.com/photo-1741736000691-d019b5432fd8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
                             </div>
                         </div>
                     </div>
