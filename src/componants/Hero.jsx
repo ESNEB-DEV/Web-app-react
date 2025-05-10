@@ -2,18 +2,14 @@ import React from 'react'
 
 function Hero() {
     return (
-        <div>
-            <div className="hero min-h-96 bg-base-200">
-                <div className="hero-content text-center">
-                    <div className="max-w-md">
-                        <h1 className="text-5xl font-bold">Hello there</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button className="btn btn-primary">Get Started</button>
-                    </div>
-                </div>
+        <div className='bg-gray-900 text-white py-16'>
+            <div className="container mx-auto text-center">
+                <h1 className='text-5xl font-extrabold'>Welcome to the world of food.</h1>
+                <p className='text-lg mt-4'>Discover amzing things wite taiulwindCSS</p>
+                <a href="#" className='bg-blue-500 text-white px-6 py-2 rounded-full mt-8 inline-block hover:bg-blue-600'> Get  Started</a>
             </div>
-        </div>
 
+        </div>
     )
 }
 
