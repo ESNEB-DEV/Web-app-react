@@ -3,7 +3,6 @@ import './App.css'
 // components
 import Navbar from './componants/Navbar'
 import Hero from './componants/Hero'
-import About from './componants/About'
 import InfoOne from './componants/InfoOne'
 import InfoTwo from './componants/InfoTwo'
 import CTA from './componants/CTA'
@@ -16,7 +15,6 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <About />
       <InfoOne />
       <InfoTwo />
       <CTA />

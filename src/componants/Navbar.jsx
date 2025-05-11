@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
 
@@ -24,20 +25,20 @@ export default function Navbar() {
                 </div>
 
                 <ul className='hidden md:flex space-x-4'>
-                    <li><a href='#' className='text-white'>Home</a></li>
-                    <li><a href='#' className='text-white'>About</a></li>
-                    <li><a href='#' className='text-white'>Service</a></li>
-                    <li><a href='#' className='text-white'>Contact</a></li>
+                    <li><Link to='/' className='text-white'>Home</Link></li>
+                    <li><Link to='/about' className='text-white'>About</Link></li>
+                    <li><Link to='#' className='text-white'>Service</Link></li>
+                    <li><Link to='#' className='text-white'>Contact</Link></li>
                 </ul>
             </div>
 
             {/* MobileMenu */}
             {isMenuOpen ? (
                 <ul className='flex-col md:hidden'>
-                    <li className='py-2'><a href='#' className='text-white'>Home</a></li>
-                    <li className='py-2'><a href='#' className='text-white'>About</a></li>
-                    <li className='py-2'><a href='#' className='text-white'>Service</a></li>
-                    <li className='py-2'><a href='#' className='text-white'>Contact</a></li>
+                    <li className='py-2'><Link to='/' className='text-white'>Home</Link></li>
+                    <li className='py-2'><Link to='/about' className='text-white'>About</Link></li>
+                    <li className='py-2'><Link to='#' className='text-white'>Service</Link></li>
+                    <li className='py-2'><Link to='#' className='text-white'>Contact</Link></li>
                 </ul>
             ) : null}
 
