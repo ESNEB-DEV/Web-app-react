@@ -26,7 +26,7 @@ export default function Navbar() {
 
                 <ul className='hidden md:flex space-x-4'>
                     <li><Link to='/' className='text-white'>Home</Link></li>
-                    <li><Link to='/about' className='text-white'>About</Link></li>
+                    <li><Link to='/about' className='text-white'>About</Link></li>  
                     <li><Link to='#' className='text-white'>Service</Link></li>
                     <li><Link to='#' className='text-white'>Contact</Link></li>
                 </ul>

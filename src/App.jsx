@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 // components
 import Navbar from './componants/Navbar'
@@ -11,6 +11,11 @@ import Getintouch from './componants/Getintouch'
 import Footer from './componants/Footer'
 
 function App() {
+
+  useEffect(() => {
+    document.title = "FoodDelish";
+  }, []);
+
   return (
     <div>
       <Navbar />
