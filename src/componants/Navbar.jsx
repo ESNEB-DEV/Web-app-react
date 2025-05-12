@@ -18,7 +18,7 @@ export default function Navbar() {
                 </div>
                 <div className="md:hidden">
                     <button id='menu-toggle' className='text-white' onClick={toggleMenu}>
-                        <svg fill='none' stroke='currentColor' stroke-linecap="rounded" stroke-linejoin="rounded" stroke-width="2" viewBox='0 0 24 24' className='w-6 h-6' >
+                        <svg fill='none' stroke='currentColor' strokeLinecap="rounded" strokeLinejoin="rounded" strokeWidth="2" viewBox='0 0 24 24' className='w-6 h-6' >
                             <path d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
