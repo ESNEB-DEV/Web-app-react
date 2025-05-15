@@ -10,11 +10,10 @@ export default function Navbar() {
     }
 
     return (
-        <nav className='bg-blue-500 p-4'>
+        <nav className='bg-orange-500 p-4 px-10'>
             <div className="container mx-auto flex justify-between items-center">
-                <div className='flex justify-ceneter items-center'>
-                    <img src="src/assets/img/cutlery.png" alt="Banner" className='w-12 ' />
-                    <a href='#' className='text-white text-2xl font-semibold pl-4'>FoodDelish</a>
+                <div className='flex justify-ceneter items-center '>
+                    <img src="src/assets/img/logo.png" alt="Banner" className='w-20 ' />
                 </div>
                 <div className="md:hidden">
                     <button id='menu-toggle' className='text-white' onClick={toggleMenu}>
@@ -24,21 +23,23 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                <ul className='hidden md:flex space-x-4'>
-                    <li><Link to='/' className='text-white'>Home</Link></li>
-                    <li><Link to='/about' className='text-white'>About</Link></li>  
-                    <li><Link to='#' className='text-white'>Service</Link></li>
-                    <li><Link to='#' className='text-white'>Contact</Link></li>
+                <ul className='hidden md:flex space-x-9 text-md'>
+                    <li><Link to='/' className='text-white font-sans'>HOME</Link></li>
+                    <li><Link to='#' className='text-white font-sans'>PRODUCT</Link></li>
+                    <li><Link to='#' className='text-white font-sans'>PROMO</Link></li>
+                    <li><Link to='/about' className='text-white font-sans'>ABOUT</Link></li>
+                    <li><Link to='#' className='text-white font-sans'>CONTACT</Link></li>
                 </ul>
             </div>
 
             {/* MobileMenu */}
             {isMenuOpen ? (
-                <ul className='flex-col md:hidden'>
-                    <li className='py-2'><Link to='/' className='text-white'>Home</Link></li>
-                    <li className='py-2'><Link to='/about' className='text-white'>About</Link></li>
-                    <li className='py-2'><Link to='#' className='text-white'>Service</Link></li>
-                    <li className='py-2'><Link to='#' className='text-white'>Contact</Link></li>
+                <ul className='flex-col md:hidden pt-4 font-sans'>
+                    <li className='py-2'><Link to='/' className='text-white font-sans'>HOME</Link></li>
+                    <li className='py-2'><Link to='#' className='text-white font-sans'>PRODUCT</Link></li>
+                    <li className='py-2'><Link to='#' className='text-white font-sans'>PROMO</Link></li>
+                    <li className='py-2'><Link to='/about' className='text-white font-sans'>ABOUT</Link></li>
+                    <li className='py-2'><Link to='#' className='text-white font-sans'>CONTACT</Link></li>
                 </ul>
             ) : null}
 

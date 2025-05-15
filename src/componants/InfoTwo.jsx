@@ -2,13 +2,14 @@ import React from 'react'
 
 function InfoTwo() {
     return (
-        <div className='container mx-auto flex flex-col md:flex-row justify-center py-16 bg-white '>
-            <div className="w-full py-6  p-4">
-                <h2 className='text-3xl font-semibold text-black'>Welcome to the world of food.</h2>
-                <p className='text-gray-600 mt-4 w-[400px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, explicabo eum aliquam reprehenderit cum in magni voluptatum alias est fugit ipsam! Ipsam id blanditiis iure ad, earum inventore molestiae molestias.</p>
+        <div className=" flex flex-col md:flex-row justify-center items-center py-16  bg-[url('src/assets/img/chicken-wing-bg-black.png')] bg-no-repeat bg-cover bg-center bg-top">
+            <div className='w-1/2'>
+                <img src='src/assets/img/package-4.png' alt="Package 2" className='mx-auto'></img>
             </div>
-            <div className="w-full pr-20 p-4">
-                <img src="src/assets/img/chef-bg.png" alt="Banner" className=' w-[800px] h-[400px] rounded-3xl' />
+            <div className='w-1/2 p-10'>
+                <h1 className='text-5xl font-extrabold text-white font-sans'>CHIKEN WINGS</h1>
+                <p className='text-gray-600 mt-10 text-md text-white font-sans'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis <br /> autem quia explicabo ullam cupiditate et neque ratione dignissimos  <br /> culpa sapiente aliquam commodi, nobis iure inventore id, accusantium  <br /> impedit ad cumque.</p>
+                <a href="#" className='bg-orange-500 text-center font-sans text-white px-6 py-2 rounded mt-8 inline-block hover:bg-orange-600 w-56'> ORDER NOW</a>
             </div>
         </div>
     )
