@@ -3,11 +3,12 @@ import './App.css'
 // components
 import Navbar from './componants/Navbar'
 import Hero from './componants/Hero'
-import InfoOne from './componants/InfoOne'
-import InfoTwo from './componants/InfoTwo'
+import RecommenOne from './componants/RecommenOne'
 import OurStatics from './componants/OurStatics'
-import Testimonials from './componants/Testimonials'
-import Getintouch from './componants/Getintouch'
+import PopularMenu from './componants/PopularMenu'
+import RecommenTwo from './componants/RecommenTwo'
+import ChefInfo from './componants/ChefInfo'
+import UpdateMenu from './componants/UpdateMenu'
 import Footer from './componants/Footer'
 
 function App() {
@@ -19,13 +20,14 @@ function App() {
   return (
     <div >
       <Navbar />
-      <Hero />
-      <InfoOne />
-      <InfoTwo />
+      <Hero />  
+      <PopularMenu />
+      <RecommenOne />
       <OurStatics />
-      <Testimonials />
-      {/* <Getintouch />
-      <Footer /> */}
+      <RecommenTwo />
+      <ChefInfo />
+      <UpdateMenu />
+      <Footer />
     </div>
   )
 }
