@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './componants/Navbar'
 import Footer from './componants/Footer'
+import { Rating } from '@mui/material'
 
 function About() {
     return (
@@ -40,7 +41,7 @@ function About() {
                         </div>
                         <div className="stat-value">86%</div>
                         <div className="stat-title">Tasks done</div>
-                        <div className="stat-desc text-secondary">31 tasks remaining</div>
+                        <Rating name="half-rating" defaultValue={5} precision={0.5} />
                     </div>
                 </div>
             </div>
