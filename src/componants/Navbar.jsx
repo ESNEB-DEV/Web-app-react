@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 export default function Navbar() {
 
@@ -16,11 +17,14 @@ export default function Navbar() {
                     <img src="src/assets/img/logo.png" alt="Banner" className='w-20 ' />
                 </div>
                 <div className="md:hidden">
-                    <button id='menu-toggle' className='text-white' onClick={toggleMenu}>
-                        <svg fill='none' stroke='currentColor' strokeLinecap="rounded" strokeLinejoin="rounded" strokeWidth="2" viewBox='0 0 24 24' className='w-6 h-6' >
-                            <path d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
+                    <label className="btn btn-circle swap swap-rotate bg-white">
+                        <input type="checkbox" id='menu-toggle' onClick={toggleMenu} />
+                        {/* Open icon */}
+                        <FaBars className='swap-off fill-current text-orange-500 w-[25px] h-[25px]' />
+
+                        {/* close icon */}
+                        <FaTimes className='swap-on fill-current text-orange-500 w-[25px] h-[25px]' />
+                    </label>
                 </div>
 
                 <ul className='hidden md:flex space-x-9 text-md'>
